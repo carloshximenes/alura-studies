@@ -1,0 +1,42 @@
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 16px;
+
+    label {
+        margin-bottom: 8px;
+        font-size: 1.25rem;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px 12px 4px;
+        box-sizing: border-box;
+        border: unset;
+        border-radius: 5px;
+        background-color: #5d677c;
+        box-shadow: 0px 2px 4px #2d2b2b9f inset;
+
+        &::placeholder {
+            color: #bfbfbf;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: calc(60% - 12px);
+
+        &:last-of-type {
+            width: 40%;
+        }
+
+        label {
+            font-size: 2rem;
+        }
+
+        input {
+            height: 100%;
+            font-size: 1.75rem;
+        }
+    }
+}
